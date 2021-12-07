@@ -22,7 +22,6 @@ import javax.swing.JScrollPane;
 import javax.swing.border.EmptyBorder;
 
 
-import algoritmo.circunferencia.*;
 import algoritmo.operacoes3d.*;
 import algoritmo.operacoes2D.*;
 import algoritmo.cisalhamento.*;
@@ -96,12 +95,16 @@ public class PanelPrincipal extends JFrame {
 
 		//**************PANEL PRINCIPAL**************************
 		PanelPrincipal = new JPanel();
-
+		//gabriel: to tentando fazer com que a janela abra em um tamanho fixo
 		PanelPrincipal.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(PanelPrincipal);
+		//setContentPane(PanelPrincipal);
+		//setSize(600, 400);
+		getContentPane().add("Center",PanelPrincipal);
+	
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(857, 914);
-		setTitle("Projeto Computa��o Gr�fica");
+		pack();
+		
+		setTitle("Projeto Computação Gráfica");
 		planoCartesiano = new PanelPlanoCartesiano();
 		//************************LABELS***************************************************
 				JLabel lblCoordenadaX = new JLabel("Coordenada X:");
@@ -171,8 +174,8 @@ public class PanelPrincipal extends JFrame {
 				lblCoordenadaDcx.setText("DcX:  "+Integer.toString(funcoesDeNormalizacao.calcularDCX(600, ndcx)));
 				lblCoordenadaDcy.setText("DcY:  "+Integer.toString(funcoesDeNormalizacao.calcularDCY(600, ndcy)));
 								
-				lblCoordenadaX.setText("x: "+Integer.valueOf(Posx));
-				lblCoordenadaY.setText("y: "+Integer.valueOf(Posy));
+				lblCoordenadaX.setText("x: "+(Integer.valueOf(Posx)-363));
+                lblCoordenadaY.setText("y: "+(Integer.valueOf(Posy)-381)*(-1));
 				
 			}
 		});
