@@ -32,7 +32,7 @@ public class PanelPlanoCartesiano extends JPanel {
 			public void mouseDragged(MouseEvent event) {
 				int x = event.getPoint().x;
 				int y = event.getPoint().y;
-				lista.add(new Ponto(x, y, 0));
+				lista.add(new Ponto(x, y));
 			}
 		});
 		setBounds(400, 30, LARGURA, ALTURA);

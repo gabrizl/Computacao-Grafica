@@ -2,20 +2,38 @@ package algoritmo.operacoes3d;
 
 public class FuncoesDeNormalizacao {
 
-	public static double ndcx;
-	public static double ndcy;
-	public static double dcx;
-	public static double dcy;
+	public static float ndcx;
+	public static float ndcy;
+	public static float dcx;
+	public static float dcy;
 	
-	
-	static public double calcularNDCX(int ndh, int dcx) {
+	static public  float calcularNDCX( float getX) {
+        ndcx = (((getX-(-300))/(300-(-300)))*2)-1;
+        return ndcx;
+    }
+
+    static public float calcularNDCY( float getY) {
+        ndcy =  (((getY-(-300))/(300-(-300)))*2)-1;
+        return ndcy;
+    }
+
+    static public int calcularDCX(int ndh, float ndcx) {
+        dcx = ((ndh - 1) * ndcx);
+        return Math.round(dcx);
+    }
+
+    static public int calcularDCY(int ndv, float ndcy) {
+        dcy = ((ndv - 1) * ndcy);
+        return Math.round(dcy);
+    }
+	/*static public float calcularNDCX(float ndh, int dcx) {
 
 		double ndcx = (double) dcx / (ndh - 1);
-		return ndcx;
+		return  ndcx;
 		
 	}
 	
-	static public double calcularNDCY(int ndv, int dcy){
+	static public double calcularNDCY(float ndv, int dcy){
 		
 		double ndcy = (double) dcy / (ndv - 1);
 		return ndcy;
@@ -32,6 +50,6 @@ public class FuncoesDeNormalizacao {
 		dcy = ((ndv-1)* ndcy); 
 		return (int) Math.round(dcy);
 		
-	}
+	}*/
 
 }

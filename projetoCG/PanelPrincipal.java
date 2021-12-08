@@ -104,8 +104,12 @@ public class PanelPrincipal extends JFrame {
 		PanelPrincipal.add(lblCoordenadaDcx);
 
 		JLabel lblCoordenadaDcy = new JLabel("Coordenada DCY:");
-		lblCoordenadaDcy.setBounds(482, 671, 181, 14);
+		lblCoordenadaDcy.setBounds(482, 672, 181, 14);
 		PanelPrincipal.add(lblCoordenadaDcy);
+
+		JLabel lblCoordenadaTela = new JLabel("Tela:");
+		lblCoordenadaTela.setBounds(303, 700, 169, 14);
+		PanelPrincipal.add(lblCoordenadaTela);
 
 		lblNdcx = new JLabel();
 		lblNdcx.setBounds(411, 646, 46, 14);
@@ -129,22 +133,26 @@ public class PanelPrincipal extends JFrame {
 			@SuppressWarnings("static-access")
 			@Override
 			public void mouseMoved(MouseEvent eventoDeMouse) {
+	
 				Posx = (int) getMousePosition().getX();
 				Posy = (int) getMousePosition().getY();
 				int dcx = eventoDeMouse.getX() - 300;
 				int dcy = (eventoDeMouse.getY() - 300) * -1;
 
-				double ndcx = funcoesDeNormalizacao.calcularNDCX(planoCartesiano.LARGURA, dcx);
-				double ndcy = funcoesDeNormalizacao.calcularNDCX(planoCartesiano.ALTURA, dcy);
-
+				float ndcx = funcoesDeNormalizacao.calcularNDCX(dcx);
+				float ndcy = funcoesDeNormalizacao.calcularNDCY(dcy);
+				System.out.println("X:"+dcx);
+				System.out.println("Y:"+dcy);
 				lblCoordenadaNdcx.setText("Ndc X :  " + String.format("%.4f", ndcx));
 				lblCoordenadaNdcy.setText("Ndc Y :  " + String.format("%.4f", ndcy));
 
 				lblCoordenadaDcx.setText("DcX:  " + Integer.toString(funcoesDeNormalizacao.calcularDCX(600, ndcx)));
 				lblCoordenadaDcy.setText("DcY:  " + Integer.toString(funcoesDeNormalizacao.calcularDCY(600, ndcy)));
 
-				lblCoordenadaX.setText("x: " + (Integer.valueOf(Posx) - 350));
-				lblCoordenadaY.setText("y: " + (Integer.valueOf(Posy) - 381) * (-1));
+				lblCoordenadaX.setText("X: " + (Integer.valueOf(Posx) - 350));
+				lblCoordenadaY.setText("Y: " + (Integer.valueOf(Posy) - 381) * (-1));
+
+				lblCoordenadaTela.setText("Tela: ("+(Posx-50)+","+(Posy-81)+")");
 			}
 		});
 		planoCartesiano.setLocation(50, 30);
@@ -173,6 +181,8 @@ public class PanelPrincipal extends JFrame {
 			}
 		});
 
+		JMenu tela = new JMenu("Tela: 600x600");
+		barraDeMenu.add(tela);
 	}
 
 }

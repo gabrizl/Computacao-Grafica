@@ -3,11 +3,11 @@ package algoritmo.operacoes3d;
 /**
  * Ponto. Têm dois valores. X e Y
  * 
- * @author Lucas Miranda Dourado
+ * 
  *
  */
 public class Ponto {
-	private int x, y, z = 0;
+	private int x, y= 0;
 
 	public Ponto() {
 		// TODO Auto-generated constructor stub
@@ -17,12 +17,12 @@ public class Ponto {
 	 * 
 	 * @param x
 	 * @param y
-	 * @param z
+	 *
 	 */
-	public Ponto(int x, int y, int z) {
+	public Ponto(int x, int y) {
 		this.x = x;
 		this.y = y;
-		this.z = z;
+	
 	}
 
 	/**
@@ -55,20 +55,20 @@ public class Ponto {
 		this.y = y;
 	}
 
-	/**
-	 * @return the z
-	 */
-	public int getZ() {
-		return z;
-	}
+	// /**
+	//  * @return the z
+	//  */
+	// public int getZ() {
+	// 	return z;
+	// }
 
-	/**
-	 * @param z
-	 *            the z to set
-	 */
-	public void setZ(int z) {
-		this.z = z;
-	}
+	// /**
+	//  * @param z
+	//  *            the z to set
+	//  */
+	// public void setZ(int z) {
+	// 	this.z = z;
+	// }
 
 	/*
 	 * (non-Javadoc)
@@ -77,12 +77,12 @@ public class Ponto {
 	 */
 	@Override
 	public String toString() {
-		return "Ponto [x=" + x + ", y=" + y + ", z=" + z + "]";
+		return "Ponto [x=" + x + ", y=" + y +"]";
 	}
 
-	public String imprime3D() {
-		return "Ponto [x=" + x + ", y=" + y + ", z=" + z + "]";
+	// public String imprime3D() {
+	// 	return "Ponto [x=" + x + ", y=" + y + ", z=" + z + "]";
 
-	}
+	// }
 
 }

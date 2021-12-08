@@ -9,7 +9,7 @@ public class SistemaDeCoordenadas {
 	
 	//Para coordenadas normalizadas
 	/**
-	 * Conversão para NDCX
+	 * Conversao para NDCX
 	 * @param x - Valor x
 	 * @return NDCX
 	 */
@@ -21,7 +21,7 @@ public class SistemaDeCoordenadas {
 		return ndcx;
 	}
 	/**
-	 * Conversão para NDCY
+	 * Conversao para NDCY
 	 * @param y - Valor Y
 	 * @return NDCY
 	 */
@@ -34,7 +34,7 @@ public class SistemaDeCoordenadas {
 	}
 	//Para coordenadas do dispositivo
 	/**
-	 * Conversão para NCX
+	 * Conversao para NCX
 	 * @param X - Valor X
 	 * @return NCX
 	 */
@@ -47,7 +47,7 @@ public class SistemaDeCoordenadas {
 		
 	}
 	/**
-	 * Conversão para NCY
+	 * Conversao para NCY
 	 * @param Y - Valor Y
 	 * @return NCY
 	 */

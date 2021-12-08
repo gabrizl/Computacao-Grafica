@@ -38,14 +38,14 @@ public class PanelNormalizacao extends JPanel {
 				int dcx = eventoDeMouse.getX() - 300;
 				int dcy = (eventoDeMouse.getY() - 300) * -1;
 				
-				double ndcx = funcoesDeNormalizacao.calcularNDCX(panelPlanoCartesiano.LARGURA, dcx);
-				double ndcy = funcoesDeNormalizacao.calcularNDCX(panelPlanoCartesiano.ALTURA, dcy);
+				double ndcx = funcoesDeNormalizacao.calcularNDCX((float)panelPlanoCartesiano.LARGURA,(float) dcx);
+				double ndcy = funcoesDeNormalizacao.calcularNDCY((float)panelPlanoCartesiano.ALTURA,(float) dcy);
 				
 				labelNDCX.setText("ndcx : "+String.format("%.4f", ndcx));
 				labelNDCY.setText("ndcy : "+String.format("%.4f", ndcy));
 				
-				labelDCX.setText("dcx (x): "+Integer.toString(funcoesDeNormalizacao.calcularDCX(600, ndcx)));
-				labelDCY.setText("dcy (y): "+Integer.toString(funcoesDeNormalizacao.calcularDCY(600, ndcy)));
+				labelDCX.setText("dcx (x): "+Integer.toString(FuncoesDeNormalizacao.calcularDCX(600,(float) ndcx)));
+				labelDCY.setText("dcy (y): "+Integer.toString(FuncoesDeNormalizacao.calcularDCY(600,(float) ndcy)));
 								
 				lblX.setText("x: "+Integer.valueOf(dcx));
 				lblY.setText("y: "+Integer.valueOf(dcy));
