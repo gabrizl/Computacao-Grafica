@@ -1,6 +1,6 @@
-package algoritmo.cisalhamento;
+/*package algoritmo.cisalhamento;
 
-import java.awt.BorderLayout;
+import java.awt.BorderLayout;	------- TESTE COMENTADO -------
 import java.awt.Color;
 import java.awt.FlowLayout;
 
@@ -34,7 +34,7 @@ public class ValoresCisalhamento3D extends JDialog {
 	 * @param tipo 
 	 * 
 	 * @param tipo
-	 */
+	 
 	public ValoresCisalhamento3D(String tipo) {
 
 		status = true;
@@ -133,14 +133,14 @@ public class ValoresCisalhamento3D extends JDialog {
 	/**
 	 * @param txtTranslacaoY
 	 *            the txtTranslacaoY to set
-	 */
+	 
 	public void setTxtTranslacaoY(JTextField txtTranslacaoY) {
 		this.txtX = txtTranslacaoY;
 	}
 
 	/**
 	 * @return the txtTranslacaoX
-	 */
+	 
 	public JTextField getTxtTranslacaoX() {
 		return txtX;
 	}
@@ -148,9 +148,9 @@ public class ValoresCisalhamento3D extends JDialog {
 	/**
 	 * @param txtTranslacaoX
 	 *            the txtTranslacaoX to set
-	 */
+	 
 	public void setTxtTranslacaoX(JTextField txtTranslacaoX) {
 		this.txtX = txtTranslacaoX;
 		txtX.setFont(new Font("Tahoma", Font.PLAIN, 14));
 	}
-}
+}*/

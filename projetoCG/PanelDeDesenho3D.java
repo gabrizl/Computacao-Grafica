@@ -1,6 +1,6 @@
-package projetoCG;
+/*package projetoCG;
 
-import java.awt.Color;
+import java.awt.Color;					---- TESTE COMENTADO ----
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.MouseAdapter;
@@ -23,7 +23,7 @@ public class PanelDeDesenho3D extends JPanel {
 	public PanelDeDesenho3D() {
 	
 
-	// MÉTODO QUE CAPTURA AS COORDENADAS DO MOUSE
+	// Mï¿½TODO QUE CAPTURA AS COORDENADAS DO MOUSE
 	addMouseMotionListener(new MouseMotionAdapter() {
 		@Override
 		
@@ -113,4 +113,4 @@ public class PanelDeDesenho3D extends JPanel {
 	}
 	
 	
-}
+}*/

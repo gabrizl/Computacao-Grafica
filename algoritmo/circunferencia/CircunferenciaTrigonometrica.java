@@ -1,6 +1,6 @@
-package algoritmo.circunferencia;
+/*package algoritmo.circunferencia;
 
-import javax.swing.JFrame;
+import javax.swing.JFrame;				----------- COMENTADO PODE TIRAR ---------------
 import javax.swing.JLabel;
 
 import java.awt.Color;
@@ -75,4 +75,4 @@ public class CircunferenciaTrigonometrica extends JFrame {
 		getContentPane().add(btnCancelar);
 		
 	}
-}
+}*/

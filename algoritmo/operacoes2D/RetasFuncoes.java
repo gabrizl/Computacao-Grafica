@@ -1,6 +1,6 @@
-package algoritmo.operacoes2D;
+/*package algoritmo.operacoes2D;
 
-import java.util.ArrayList;
+import java.util.ArrayList; 		---- TESTE COMENTADO ----
 import algoritmo.operacoes3d.*;
 import java.util.List;
 
@@ -24,7 +24,7 @@ public class RetasFuncoes {
 	 * @param y1
 	 * @param x2
 	 * @param y2
-	 */
+	 
 	public List<Ponto> dda(int x1, int y1, int x2, int y2) {
 		lenght = Math.abs(x2 - x1);
 		media = (double) (Math.abs(y2 - y1)) / (double) (Math.abs(x2 - x1));
@@ -248,7 +248,7 @@ public class RetasFuncoes {
 	 * 
 	 * @param x
 	 * @param y
-	 */
+	 
 	private void setPixel(double x, double y) {
 		listaDePontos
 				.add(new Ponto((int) Math.round(x), (int) Math.round(y), 0));
@@ -257,7 +257,7 @@ public class RetasFuncoes {
 
 	/**
 	 * @return the listaDePontos
-	 */
+	 
 	public List<Ponto> getListaDePontos() {
 		return listaDePontos;
 	}
@@ -265,7 +265,7 @@ public class RetasFuncoes {
 	/**
 	 * @param listaDePontos
 	 *            the listaDePontos to set
-	 */
+	 
 	public void setListaDePontos(List<Ponto> listaDePontos) {
 		this.listaDePontos = listaDePontos;
 	}
@@ -283,7 +283,7 @@ public class RetasFuncoes {
 	 * @param y
 	 * @param x2
 	 * @param y2
-	 */
+	 
 	public List<Ponto> retaPontoMedio(int x, int y, int x2, int y2) {
 		int wigth = x2 - x;
 		int height = y2 - y;
@@ -335,4 +335,4 @@ public class RetasFuncoes {
 		}
 		return listaDePontos;
 	}
-}
+}*/

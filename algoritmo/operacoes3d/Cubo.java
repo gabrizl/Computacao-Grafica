@@ -1,6 +1,6 @@
-package algoritmo.operacoes3d;
+/*package algoritmo.operacoes3d;
 
-import java.awt.BorderLayout; 
+import java.awt.BorderLayout; 		---- TESTE COMENTADO ----
 import java.awt.Color;
 import java.awt.FlowLayout;
 
@@ -37,7 +37,7 @@ public class Cubo extends JDialog {
 	 * @param lista 
 	 * 
 	 * @param tipo
-	 */
+	 
 	public Cubo() {
 		status = true;
 		setVisible(true);
@@ -136,7 +136,7 @@ public class Cubo extends JDialog {
 
 	/**
 	 * @return the txtTranslacaoY
-	 */
+	 
 	public JTextField getTxtTranslacaoY() {
 		return txtY;
 	}
@@ -144,14 +144,14 @@ public class Cubo extends JDialog {
 	/**
 	 * @param txtTranslacaoY
 	 *            the txtTranslacaoY to set
-	 */
+	 
 	public void setTxtTranslacaoY(JTextField txtTranslacaoY) {
 		this.txtY = txtTranslacaoY;
 	}
 
 	/**
 	 * @return the txtTranslacaoX
-	 */
+	 
 	public JTextField getTxtTranslacaoX() {
 		return txtX;
 	}
@@ -159,8 +159,8 @@ public class Cubo extends JDialog {
 	/**
 	 * @param txtTranslacaoX
 	 *            the txtTranslacaoX to set
-	 */
+	 
 	public void setTxtTranslacaoX(JTextField txtTranslacaoX) {
 		this.txtX = txtTranslacaoX;
 	}
-}
+}*/

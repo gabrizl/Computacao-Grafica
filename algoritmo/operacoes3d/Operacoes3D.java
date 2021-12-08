@@ -1,4 +1,4 @@
-
+/*
 package algoritmo.operacoes3d;
 
 import java.util.ArrayList;
@@ -600,3 +600,4 @@ public class Operacoes3D {
 	}
 
 }
+*/

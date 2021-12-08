@@ -252,22 +252,22 @@ public class RetasFuncoes {
 		listaDePontos
 				.add(new Ponto((int) Math.round(x), (int) Math.round(y), 0));
 		
-	}
+	}} // ---- TESTE
 
 	/**
 	 * @return the listaDePontos
-	 */
-	public List<Ponto> getListaDePontos() {
+	 
+	public List<Ponto> getListaDePontos() { ---- TESTE COMENTADO ----
 		return listaDePontos;
 	}
 
 	/**
 	 * @param listaDePontos
 	 *            the listaDePontos to set
-	 */
+	 
 	public void setListaDePontos(List<Ponto> listaDePontos) {
 		this.listaDePontos = listaDePontos;
-	}
+	}*/
 
 	/**
 	 * Algoritmo de ponto médio. Verifica se o <code>d</code> é maior que ZERO.
@@ -282,8 +282,8 @@ public class RetasFuncoes {
 	 * @param y
 	 * @param x2
 	 * @param y2
-	 */
-	public List<Ponto> retaPontoMedio(int x, int y, int x2, int y2) {
+	 
+	public List<Ponto> retaPontoMedio(int x, int y, int x2, int y2) { ---- TESTE COMENTADO ----
 		int wigth = x2 - x;
 		int height = y2 - y;
 		int dx1 = 0, dy1 = 0, dx2 = 0, dy2 = 0;
@@ -334,4 +334,4 @@ public class RetasFuncoes {
 		}
 		return listaDePontos;
 	}
-}
+}*/

@@ -1,6 +1,6 @@
-package algoritmo.operacoes3d;
+/*package algoritmo.operacoes3d;
 
-import java.util.ArrayList;  
+import java.util.ArrayList;  		----- TESTE COMENTADO -----
 import java.util.List;
 
 
@@ -10,14 +10,14 @@ import java.util.List;
  * 
  * @author Lucas Miranda Dourado
  *
- */
+ 
 public class Cubo3D {
 
 	int x, y, z, w;
 
 	/**
 	 * Método construtor default. (Padrão)
-	 */
+	 
 	public Cubo3D() {
 		// TODO Auto-generated constructor stub
 	}
@@ -28,7 +28,7 @@ public class Cubo3D {
 	 * @param ty
 	 * @param tz
 	 * @return
-	 */
+	 
 	private double[][] gerarMatrizTranslacao(int tx, int ty, int tz) {
 		double[][] matriz = new double[4][4];
 
@@ -62,7 +62,7 @@ public class Cubo3D {
 	 * @param sy
 	 * @param sz
 	 * @return Vetor
-	 */
+	 
 	private double[][] gerarMatrizEscala(double sx, double sy, double sz) {
 		double[][] matriz = new double[4][4];
 		if (sx == 0) {
@@ -104,7 +104,7 @@ public class Cubo3D {
 	/**
 	 * Matriz de Reflexão nos eixos X e Y em um objeto em três dimensões.
 	 * @return
-	 */
+	 
 	private double[][] gerarMatrizReflexaoXY() {
 
 		double[][] matriz = new double[4][4];
@@ -140,7 +140,7 @@ public class Cubo3D {
 	/**
 	 * Matriz de Reflexão nos eixos Y e Z em um objeto em três dimensões.
 	 * @return
-	 */
+	 
 	private double[][] gerarMatrizReflexaoYZ() {
 
 		double[][] matriz = new double[4][4];
@@ -175,7 +175,7 @@ public class Cubo3D {
 	/**
 	 * Matriz de Reflexão nos eixos X e Z em um objeto em três dimensões.
 	 * @return
-	 */
+	 
 	private double[][] gerarMatrizReflexaoXZ() { 
 
 		double[][] matriz = new double[4][4];
@@ -213,7 +213,7 @@ public class Cubo3D {
 	 * @param a
 	 * @param b
 	 * @return
-	 */
+	 
 	private double[][] gerarMatrizCisalhamentoXY(int a, int b) {
 		double[][] matriz = new double[3][3];
 
@@ -237,7 +237,7 @@ public class Cubo3D {
 	 * Matriz de Rotação no eixo X.
 	 * @param angulo
 	 * @return
-	 */
+	 
 	private double[][] gerarMatrizRotacaoX(int angulo) {
 		double[][] matriz = new double[4][4];
 
@@ -275,7 +275,7 @@ public class Cubo3D {
 	 * Matriz de Rotação nos eixo Y.
 	 * @param angulo
 	 * @return
-	 */
+	 
 	private double[][] gerarMatrizRotacaoY(int angulo) {
 		double[][] matriz = new double[4][4];
 
@@ -313,7 +313,7 @@ public class Cubo3D {
 	 * Matriz de Rotação no eixo Z.
 	 * @param angulo
 	 * @return
-	 */
+	 
 	private double[][] gerarMatrizRotacaoZ(int angulo) {
 		double[][] matriz = new double[4][4];
 
@@ -354,7 +354,7 @@ public class Cubo3D {
 	 * @param y
 	 * @param z
 	 * @return
-	 */
+	 
 	private double[][] translacaoMulti(double[][] matriz, int x, int y, int z) {
 
 		try {
@@ -833,4 +833,4 @@ public class Cubo3D {
 		return lista;
 	}
 
-}
+}*/

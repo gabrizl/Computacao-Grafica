@@ -78,8 +78,9 @@ public class TranslacaoInterface extends JDialog {
 		JPanel buttonPane = new JPanel();
 		buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
 		getContentPane().add(buttonPane, BorderLayout.SOUTH);
+	}
 
-		JButton okButton = new JButton("OK");
+		/*JButton okButton = new JButton("OK");			---- TETSTE COMENTADO ----
 		okButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				PanelReta.panelPlanoCartesiano.limparImagem();
@@ -100,7 +101,7 @@ public class TranslacaoInterface extends JDialog {
 
 			/**
 			 * @return
-			 */
+			 
 			private List<Ponto> translacao(int x, int y) {
 				List<Ponto> listaPontos = new Operacoes().translacaoMulti(PanelPrincipal.getLista(), x, y);
 				return listaPontos;
@@ -121,7 +122,7 @@ public class TranslacaoInterface extends JDialog {
 		cancelButton.setActionCommand("Cancelar");
 		buttonPane.add(cancelButton);
 
-	}
+	}*/
 
 	/**
 	 * @return the txtTranslacaoY

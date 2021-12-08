@@ -1,9 +1,7 @@
-/**
- * 
- */
+/*
 package algoritmo.operacoes3d;
 
-import javax.swing.JFrame;
+import javax.swing.JFrame;			---- TESTE COMENTADO ----
 import javax.swing.JLabel;
 
 import java.awt.Color;
@@ -22,7 +20,7 @@ import java.util.List;
 /**
  * @author Lucas
  *
- */
+ 
 public class CohenSuterland extends JFrame{
 	private JTextField txtX1;
 	private JTextField txtY1;
@@ -31,7 +29,7 @@ public class CohenSuterland extends JFrame{
 
 	/**
 	 * 
-	 */
+	 
 	public CohenSuterland() {
 		setTitle("Cohen-Suterland");
 		setSize(500, 350);
@@ -143,4 +141,4 @@ public class CohenSuterland extends JFrame{
 		setVisible(true);
 		
 	}
-}
+}*/

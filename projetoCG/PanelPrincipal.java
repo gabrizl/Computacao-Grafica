@@ -171,9 +171,8 @@ public class PanelPrincipal extends JFrame {
 				lblCoordenadaDcx.setText("DcX:  "+Integer.toString(funcoesDeNormalizacao.calcularDCX(600, ndcx)));
 				lblCoordenadaDcy.setText("DcY:  "+Integer.toString(funcoesDeNormalizacao.calcularDCY(600, ndcy)));
 								
-				lblCoordenadaX.setText("x: "+Integer.valueOf(Posx));
-				lblCoordenadaY.setText("y: "+Integer.valueOf(Posy));
-				
+				lblCoordenadaX.setText("x: "+(Integer.valueOf(Posx)-371));
+                lblCoordenadaY.setText("y: "+(Integer.valueOf(Posy)-384)*(-1));
 			}
 		});
 		planoCartesiano.setLocation(63, 30);
@@ -326,7 +325,7 @@ public class PanelPrincipal extends JFrame {
 		});
 	//	mnd2D.add(mntmEscala2D);
 
-		mntmRotacao2D = new JMenuItem("Rota\u00E7\u00E3o");
+		/*mntmRotacao2D = new JMenuItem("Rota\u00E7\u00E3o");
 		mntmRotacao2D.addActionListener(new ActionListener() {
 
 			@Override
@@ -339,10 +338,10 @@ public class PanelPrincipal extends JFrame {
 					validate();
 				}
 			}
-		});
+		});*/
 		//mnd2D.add(mntmRotacao2D);
 
-		JMenu mnReflexao = new JMenu("Reflex\u00E3o");
+		/* JMenu mnReflexao = new JMenu("Reflex\u00E3o");  ---- TESTE COMENTADO ----
 		//mnd2D.add(mnReflexao);
 
 		mntmReflexaoEmX2D = new JMenuItem("Reflex\u00E3o em X");
@@ -387,7 +386,7 @@ public class PanelPrincipal extends JFrame {
 				PanelPrincipal.repaint();
 			}
 		});
-		mnReflexao.add(mntmReflexaoEmXeY2D);
+		mnReflexao.add(mntmReflexaoEmXeY2D);   */
 
 		mntmTranslacao2D = new JMenuItem("Transla\u00E7\u00E3o");
 		mntmTranslacao2D.addActionListener(new ActionListener() {
@@ -399,7 +398,7 @@ public class PanelPrincipal extends JFrame {
 		});
 		//mnd2D.add(mntmTranslacao2D);
 
-		JMenu mnd3D = new JMenu("3D");
+		/*JMenu mnd3D = new JMenu("3D");
 		mnd3D.setMinimumSize(new Dimension(100, 0));
 		//mnTransformaes.add(mnd3D);
 
@@ -408,16 +407,16 @@ public class PanelPrincipal extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				new ValoresEscala3D();
 			}
-		});
+		});*/
 
-		JMenu mnCisalhamento = new JMenu("Cisalhamento");
+		/*JMenu mnCisalhamento = new JMenu("Cisalhamento");
 		mnd3D.add(mnCisalhamento);
 
 		JMenuItem mntmCisalhamentoEmX3D = new JMenuItem("Cisalhamento em X");
 		mntmCisalhamentoEmX3D.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new ValoresCisalhamento3D("X");
-			}
+			}										------ TESTE COMENTADO ------
 		});
 		mnCisalhamento.add(mntmCisalhamentoEmX3D);
 
@@ -436,13 +435,13 @@ public class PanelPrincipal extends JFrame {
 			}
 		});
 		mnCisalhamento.add(mntmCisalhamentoEmZ3D);
+		*/
+		//mnd3D.add(mntmEscala3D);
 
-		mnd3D.add(mntmEscala3D);
+		//JMenu mnRotao = new JMenu("Rota\u00E7\u00E3o");
+		//mnd3D.add(mnRotao);
 
-		JMenu mnRotao = new JMenu("Rota\u00E7\u00E3o");
-		mnd3D.add(mnRotao);
-
-		JMenuItem mntmRotacaoEmX3D_1 = new JMenuItem(
+		/*JMenuItem mntmRotacaoEmX3D_1 = new JMenuItem(
 				"Rota\u00E7\u00E3o em torno de X");
 		mntmRotacaoEmX3D_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -467,15 +466,15 @@ public class PanelPrincipal extends JFrame {
 				new ValoresRotacao3D("z");
 			}
 		});
-		mnRotao.add(mntmRotaoEmZ3D);
+		mnRotao.add(mntmRotaoEmZ3D);*/
 
-		JMenu mnReflexao3d = new JMenu("Reflex\u00E3o");
-		mnd3D.add(mnReflexao3d);
+		//JMenu mnReflexao3d = new JMenu("Reflex\u00E3o");
+		//mnd3D.add(mnReflexao3d);
 
-		JMenuItem mntmReflexaoXY3D = new JMenuItem("Reflex\u00E3o em XY");
+		/*JMenuItem mntmReflexaoXY3D = new JMenuItem("Reflex\u00E3o em XY");
 		mntmReflexaoXY3D.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				PanelReta.panelPlanoCartesiano.limparImagem();
+				PanelReta.panelPlanoCartesiano.limparImagem();            --- TESTE TIRADO
 				PanelPlanoCartesiano.add3D(true);
 
 				List<Ponto3D> lst = new Cubo3D().reflexaoXY(listaGLOBAL3D);
@@ -500,7 +499,7 @@ public class PanelPrincipal extends JFrame {
 				setListaGLOBAL3D(lst);
 				povoar3D(Color.BLUE);
 				panelNormalizacao.repaint();
-				repaint();
+				repaint();							------------- TESTE TIRADO
 				validate();
 			}
 		});
@@ -523,6 +522,8 @@ public class PanelPrincipal extends JFrame {
 		});
 		mnReflexao3d.add(mntmReflexaoEmXZ3D);
 
+		------------------------------------- TESTE TIRADO
+
 		JMenuItem mntmTranslao3D = new JMenuItem("Transla\u00E7\u00E3o");
 		mntmTranslao3D.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -532,7 +533,7 @@ public class PanelPrincipal extends JFrame {
 				repaint();
 			}
 		});
-		mnd3D.add(mntmTranslao3D);
+		mnd3D.add(mntmTranslao3D);*/
 		PanelPrincipal.setLayout(null);
 		
 
@@ -543,7 +544,7 @@ public class PanelPrincipal extends JFrame {
 		mnAjuda.add(mntmEquippe);
 		mntmEquippe.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				String team = "Gabriel Alves\n" + "Mateus Viana\n"+"Marcelo";
+				String team = "Gabriel Alves\n" + "Mateus Viana\n"+"Marcelo Pedrosa";
 				JOptionPane.showMessageDialog(null, team);
 			}
 		});

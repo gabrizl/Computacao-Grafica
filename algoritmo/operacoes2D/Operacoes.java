@@ -1,6 +1,6 @@
-package algoritmo.operacoes2D;
+/*package algoritmo.operacoes2D;
 
-import java.util.ArrayList; 
+import java.util.ArrayList; 		----- TESTE COMENTADO -----
 import java.util.List;
 
 import algoritmo.operacoes3d.*;
@@ -12,7 +12,7 @@ public class Operacoes {
 	 * @param tx
 	 * @param ty
 	 * @return vetor 2D (3 x 3) Double
-	 */
+	 
 	private double[][] gerarMatrizTranslacao(int tx, int ty) {
 		double[][] matriz = new double[3][3];
 
@@ -36,7 +36,7 @@ public class Operacoes {
 	 * @param sx
 	 * @param sy
 	 * @return
-	 */
+	 
 	private double[][] gerarMatrizEscala(double sx, double sy) {
 		double[][] matriz = new double[3][3];
 		if (sx == 0) {
@@ -64,7 +64,7 @@ public class Operacoes {
 	 * Matriz de rota��o em uma matriz de 2D (duas dimen��es)
 	 * @param angulo
 	 * @return vetor 3 x 3 (double)
-	 */
+	 
 	private double[][] gerarMatrizRotacao(double angulo) {
 
 		double[][] matriz2D = new double[3][3];
@@ -154,7 +154,7 @@ public class Operacoes {
 	 * 0 1 0
 	 * 1 0 0
 	 * @return
-	 */
+	 
 	private double[][] gerarMatrizReflexaoReta() {
 
 		double[][] matriz = new double[3][3];
@@ -185,7 +185,7 @@ public class Operacoes {
 	 * @param a
 	 * @param b
 	 * @return
-	 */
+	 
 	private double[][] gerarMatrizCisalhamento(Double a, Double b) {
 
 		double[][] matriz = new double[3][3];
@@ -289,7 +289,7 @@ public class Operacoes {
 	 * 
 	 * @param angulo
 	 * @return List<Ponto>, objeto rotacionado.
-	 */
+	 
 	public List<Ponto> rotacao(int angulo) {
 	
 		// Pegar a lista de pontos da TelaPrincipal
@@ -582,4 +582,4 @@ public class Operacoes {
 		return list;
 	}
 
-}
+}*/

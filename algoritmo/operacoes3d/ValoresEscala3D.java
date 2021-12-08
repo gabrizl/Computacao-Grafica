@@ -1,6 +1,6 @@
-package algoritmo.operacoes3d;
+/*package algoritmo.operacoes3d;
 
-import java.awt.BorderLayout;
+import java.awt.BorderLayout;		----- TEXTO COMENTADO ----
 import java.awt.Color;
 import java.awt.FlowLayout;
 
@@ -33,7 +33,7 @@ public class ValoresEscala3D extends JDialog {
 	 * Create the dialog.
 	 * 
 	 * @param tipo
-	 */
+	 
 	public ValoresEscala3D() {
 		
 		setVisible(true);
@@ -131,7 +131,7 @@ public class ValoresEscala3D extends JDialog {
 
 	/**
 	 * @return the txtTranslacaoY
-	 */
+	 
 	public JTextField getTxtTranslacaoY() {
 		return txtY;
 	}
@@ -139,14 +139,14 @@ public class ValoresEscala3D extends JDialog {
 	/**
 	 * @param txtTranslacaoY
 	 *            the txtTranslacaoY to set
-	 */
+	 
 	public void setTxtTranslacaoY(JTextField txtTranslacaoY) {
 		this.txtY = txtTranslacaoY;
 	}
 
 	/**
 	 * @return the txtTranslacaoX
-	 */
+	 
 	public JTextField getTxtTranslacaoX() {
 		return txtX;
 	}
@@ -154,8 +154,8 @@ public class ValoresEscala3D extends JDialog {
 	/**
 	 * @param txtTranslacaoX
 	 *            the txtTranslacaoX to set
-	 */
+	 
 	public void setTxtTranslacaoX(JTextField txtTranslacaoX) {
 		this.txtX = txtTranslacaoX;
 	}
-}
+}*/

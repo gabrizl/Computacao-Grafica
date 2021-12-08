@@ -1,6 +1,6 @@
-package algoritmo.operacoes3d;
+/*package algoritmo.operacoes3d;
 
-import java.util.ArrayList; 
+import java.util.ArrayList; 		----- TESTE COMENTADO -----
 import java.util.List;
 
 import algoritmo.operacoes2D.*;
@@ -101,7 +101,7 @@ public class Circunferencia {
 
 	/**
 	 * @return the listaPontos
-	 */
+	 
 	public List<Ponto> getListaPontos() {
 		
 		return listaPontos;
@@ -109,14 +109,14 @@ public class Circunferencia {
 
 	/**
 	 * @param listaPontos the listaPontos to set
-	 */
+	 
 	public void setListaPontos(List<Ponto> listaPontos) {
 		this.listaPontos = listaPontos;
 	}
 
 	/**
 	 * @return the d_old
-	 */
+	 
 	public double getD_old() {
 		d_old = 5 / 4 - raio;		
 		return d_old;
@@ -124,7 +124,7 @@ public class Circunferencia {
 
 	/**
 	 * @return the x
-	 */
+	 
 	public int getX() {
 		return x;
 	}
@@ -132,14 +132,14 @@ public class Circunferencia {
 	/**
 	 * @param x
 	 *            the x to set
-	 */
+	 
 	public void setX(int x) {
 		this.x = x;
 	}
 
 	/**
 	 * @return the y
-	 */
+	 
 	public int getY() {
 		return y;
 	}
@@ -147,14 +147,14 @@ public class Circunferencia {
 	/**
 	 * @param y
 	 *            the y to set
-	 */
+	 
 	public void setY(int y) {
 		this.y = y;
 	}
 
 	/**
 	 * @return the raio
-	 */
+	 
 	public int getRaio() {
 		return raio;
 	}
@@ -162,8 +162,8 @@ public class Circunferencia {
 	/**
 	 * @param raio
 	 *            the raio to set
-	 */
+	 
 	public void setRaio(int raio) {
 		this.raio = raio;
 	}
-}
+}*/

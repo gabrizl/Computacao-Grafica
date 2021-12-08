@@ -1,6 +1,6 @@
-package algoritmo.operacoes3d;
+/*package algoritmo.operacoes3d;
 
-import java.awt.BorderLayout;
+import java.awt.BorderLayout; ---- TESTE COMENTADO ----
 import java.awt.Color;
 import java.awt.FlowLayout;
 
@@ -32,7 +32,7 @@ public class Valores3D extends JDialog {
 	 * Create the dialog.
 	 * 
 	 * @param tipo
-	 */
+	 
 	public Valores3D(String tipo) {
 		setVisible(true);
 		setResizable(false);
@@ -88,8 +88,9 @@ public class Valores3D extends JDialog {
 		JPanel buttonPane = new JPanel();
 		buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
 		getContentPane().add(buttonPane, BorderLayout.SOUTH);
+	}
 
-		JButton okButton = new JButton("OK");
+		/*JButton okButton = new JButton("OK");	 		----- TESTE COMENTADO ----
 		okButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				PanelReta.panelPlanoCartesiano.limparImagem();
@@ -111,7 +112,7 @@ public class Valores3D extends JDialog {
 			} 
 			/**
 			 * @return
-			 */
+			 
 			private List<Ponto3D> translacao(int x, int y, int z) {
 				List<Ponto3D> listaPontos = new Operacoes3D().translacaoMulti3D(PanelPrincipal.getListaGLOBAL3D(), x, y, z);
 				return listaPontos;
@@ -131,11 +132,11 @@ public class Valores3D extends JDialog {
 		cancelButton.setActionCommand("Cancelar");
 		buttonPane.add(cancelButton);
 
-	}
+	}*/
 
 	/**
 	 * @return the txtTranslacaoY
-	 */
+	 
 	public JTextField getTxtTranslacaoY() {
 		return txtY;
 	}
@@ -143,7 +144,7 @@ public class Valores3D extends JDialog {
 	/**
 	 * @param txtTranslacaoY
 	 *            the txtTranslacaoY to set
-	 */
+	 
 	public void setTxtTranslacaoY(JTextField txtTranslacaoY) {
 		this.txtY = txtTranslacaoY;
 		txtY.setFont(new Font("Segoe UI Light", Font.PLAIN, 18));
@@ -151,7 +152,7 @@ public class Valores3D extends JDialog {
 
 	/**
 	 * @return the txtTranslacaoX
-	 */
+	 
 	public JTextField getTxtTranslacaoX() {
 		return txtX;
 	}
@@ -159,9 +160,9 @@ public class Valores3D extends JDialog {
 	/**
 	 * @param txtTranslacaoX
 	 *            the txtTranslacaoX to set
-	 */
+	 
 	public void setTxtTranslacaoX(JTextField txtTranslacaoX) {
 		this.txtX = txtTranslacaoX;
 		txtX.setFont(new Font("Segoe UI Light", Font.PLAIN, 18));
 	}
-}
+}*/

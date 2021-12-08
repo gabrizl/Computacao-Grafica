@@ -74,8 +74,9 @@ public class EscalaInterface extends JDialog {
 		JLabel lblTranslaoEmY = new JLabel("Transla\u00E7\u00E3o em Y");
 		lblTranslaoEmY.setBounds(20, 129, 102, 30);
 		contentPanel.add(lblTranslaoEmY);
+	}
 
-		JPanel buttonPane = new JPanel();
+		/*JPanel buttonPane = new JPanel();						---- TESTE COMENTADO ----
 		buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
 		getContentPane().add(buttonPane, BorderLayout.SOUTH);
 
@@ -118,7 +119,7 @@ public class EscalaInterface extends JDialog {
 		cancelButton.setActionCommand("Cancelar");
 		buttonPane.add(cancelButton);
 
-	}
+	}*/
 
 	/**
 	 * @return the txtTranslacaoY

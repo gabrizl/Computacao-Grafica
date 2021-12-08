@@ -1,6 +1,6 @@
-package algoritmo.operacoes2D;
+/*package algoritmo.operacoes2D;
 
-import java.util.ArrayList; 
+import java.util.ArrayList; 	----- TESTE COMENTADO ----
 import java.util.List;
 
 import algoritmo.operacoes3d.*;
@@ -12,7 +12,7 @@ import algoritmo.operacoes3d.*;
  * 
  * @author Lucas Miranda
  *
- */
+ 
 public class ElipseEquacao {
 
 	List<Ponto> listaPontos;
@@ -24,7 +24,7 @@ public class ElipseEquacao {
 		double d1 = 0; 
 		double d2 = 0;
 		
-		/* Valores iniciais */
+		/* Valores iniciais 
 		x = 0;
 		y = b;
 		d1 = b * b - a * a * b + a * a / 4.0;
@@ -70,7 +70,7 @@ public class ElipseEquacao {
 
 	/**
 	 * @return the listaPontos
-	 */
+	 
 	public List<Ponto> getListaPontos() {
 		
 		return listaPontos;
@@ -78,7 +78,7 @@ public class ElipseEquacao {
 
 	/**
 	 * @param listaPontos the listaPontos to set
-	 */
+	 
 	public void setListaPontos(List<Ponto> listaPontos) {
 		this.listaPontos = listaPontos;
 	}
@@ -92,4 +92,4 @@ public class ElipseEquacao {
 		return false;
 	}
 
-}
+}*/

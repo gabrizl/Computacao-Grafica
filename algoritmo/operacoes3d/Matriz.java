@@ -1,6 +1,6 @@
-package algoritmo.operacoes3d;
+/*package algoritmo.operacoes3d;
 
-public class Matriz {
+public class Matriz {		---- TESTE COMENTADO ----
 
 	public static double[][] multiplicaMatrizes(double[][] matrizA, double[][] matrizB) throws Exception {
 		
@@ -39,4 +39,4 @@ public class Matriz {
 			throw new Exception("Erro ao multiplicar a matriz.");
 		}
 	}
-}
+}*/

@@ -60,14 +60,14 @@ public class PanelPlanoCartesiano extends JPanel {
 	 * Adicionando a 3 dimensão.
 	 * 
 	 * @param dimencao
-	 */
-	public static void add3D(boolean dimencao) {
+	 *
+	public static void add3D(boolean dimencao) {  ----- TESTE COMENTADO -----
 		if (dimencao) {
 			for (int j = 1; j < LARGURA - 1; j++) {
 				imagemCoordenadas.setRGB(j, LARGURA - j, Color.BLACK.getRGB());
 			}
 		}
-	}
+	}*/
 
 	private void setPixel() {
 		addMouseListener(new MouseAdapter() {

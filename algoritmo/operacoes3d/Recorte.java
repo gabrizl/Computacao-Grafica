@@ -1,6 +1,6 @@
-package algoritmo.operacoes3d;
+/*package algoritmo.operacoes3d;
 
-import java.awt.Color;
+import java.awt.Color;				----- TESTE COMENTADO ----
 
 import projetoCG.*;
 public class Recorte {
@@ -57,21 +57,21 @@ public class Recorte {
 
 	 do {
 	   if (vazio(outcode0)  && vazio(outcode1) ) { 
-	       accept = true;  done = true;               /* trivial draw and exit */
+	       accept = true;  done = true;               /* trivial draw and exit 
 	       System.out.println("aceitacao trivial");
 	   } else if(!andi(outcode0, outcode1)) {
-	       done = true;                               /* trivial reject and exit */
+	       done = true;                               /* trivial reject and exit 
 	       System.out.println("rejeicao trivial");
-	   } else {                                       /* discart an out part */
-	     outcodeOut = (!vazio(outcode0)) ?  outcode0 : outcode1;        /* pick an out vertice */
+	   } else {                                       /* discart an out part 
+	     outcodeOut = (!vazio(outcode0)) ?  outcode0 : outcode1;        /* pick an out vertice 
 	     System.out.println("Ponto escolhido: " + outcodeOut);
-	     if (outcodeOut[0] == true) {                                       /* discart top */
+	     if (outcodeOut[0] == true) {                                       /* discart top 
 	       x = x0 + (x1 - x0) * (ymax - y0) / (y1 - y0);  y = ymax;
-	     } else if(outcodeOut[1] == true) {                                 /* discart bottom */
+	     } else if(outcodeOut[1] == true) {                                 /* discart bottom 
 	       x = x0 + (x1 - x0) * (ymin - y0) / (y1 - y0);  y = ymin;
-	     } else if(outcodeOut[2] == true) {                                 /* discart right */
+	     } else if(outcodeOut[2] == true) {                                 /* discart right 
 	       y = y0 + (y1 - y0) * (xmax - x0) / (x1 - x0);  x = xmax;
-	     } else if(outcodeOut[3] == true) {                                 /* discart left */
+	     } else if(outcodeOut[3] == true) {                                 /* discart left 
 	       y = y0 + (y1 - y0) * (xmin - x0) / (x1 - x0);  x = xmin;
 	     }
 	     
@@ -98,4 +98,4 @@ public class Recorte {
 
 	
 	
-}
+}*/

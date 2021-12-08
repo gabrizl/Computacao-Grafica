@@ -127,8 +127,9 @@ public class PanelReta extends JPanel {
 		lblAlgoritmoPontoMedio.setForeground(Color.WHITE);
 		lblAlgoritmoPontoMedio
 				.setFont(new Font("Century Gothic", Font.BOLD, 18));
+	}
 
-		btnPontoMedio = new JButton("Ponto m\u00E9dio");
+		/*btnPontoMedio = new JButton("Ponto m\u00E9dio"); 	   ----- TESTE COMENTADO ----
 		
 		btnPontoMedio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -188,7 +189,7 @@ public class PanelReta extends JPanel {
 		btnLimparTela.setBounds(25, 589, 232, 41);
 		add(btnLimparTela);
 
-	}
+	}*/
 	
 	/**
 	 * @return the retas

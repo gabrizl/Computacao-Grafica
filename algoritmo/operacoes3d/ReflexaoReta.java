@@ -1,6 +1,6 @@
-package algoritmo.operacoes3d;
+/*package algoritmo.operacoes3d;
 
-import javax.swing.JFrame; 
+import javax.swing.JFrame;				----- TESTE COMENTADO ----
 import javax.swing.JLabel;
 
 import java.awt.Color;
@@ -19,7 +19,7 @@ import java.util.List;
 public class ReflexaoReta extends JFrame{
 	/**
 	 * 
-	 */
+	 
 	private static final long serialVersionUID = 1L;
 	
 	List<Ponto> list;
@@ -75,4 +75,4 @@ public class ReflexaoReta extends JFrame{
 		setVisible(true);
 		
 	}
-}
+}*/

@@ -1,6 +1,6 @@
-package algoritmo.rotacao;
+/*package algoritmo.rotacao;
 
-import java.awt.BorderLayout; 
+import java.awt.BorderLayout; 			----- TESTE COMENTADO ----
 import java.awt.Color;
 import java.awt.FlowLayout;
 
@@ -34,7 +34,7 @@ public class ValoresRotacao3D extends JDialog {
 	 * @param tipo 
 	 * 
 	 * @param tipo
-	 */
+	 
 	public ValoresRotacao3D(String tipo) {
 
 		status = true;
@@ -111,13 +111,13 @@ public class ValoresRotacao3D extends JDialog {
 	/**
 	 * @param txtTranslacaoY
 	 *            the txtTranslacaoY to set
-	 */
+	 
 	public void setTxtTranslacaoY(JTextField txtTranslacaoY) {
 	}
 
 	/**
 	 * @return the txtTranslacaoX
-	 */
+	 
 	public JTextField getTxtTranslacaoX() {
 		return txtRotacao;
 	}
@@ -125,8 +125,8 @@ public class ValoresRotacao3D extends JDialog {
 	/**
 	 * @param txtTranslacaoX
 	 *            the txtTranslacaoX to set
-	 */
+	 
 	public void setTxtTranslacaoX(JTextField txtTranslacaoX) {
 		this.txtRotacao = txtTranslacaoX;
 	}
-}
+}*/
