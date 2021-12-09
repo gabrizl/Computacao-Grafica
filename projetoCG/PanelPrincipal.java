@@ -1,8 +1,7 @@
 package projetoCG;
 
-import java.awt.Component;
 import java.awt.EventQueue;
-import java.awt.Frame;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
@@ -13,7 +12,9 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import algoritmo.operacoes3d.*;
+
+import algoritmo.operacoes.*;
+
 import java.awt.event.MouseMotionAdapter;
 import java.awt.event.MouseEvent;
 
@@ -21,11 +22,6 @@ public class PanelPrincipal extends JFrame {
 
 	public static PanelPlanoCartesiano planoCartesiano = new PanelPlanoCartesiano();
 	public static PanelNormalizacao panelNormalizacao = new PanelNormalizacao();
-
-	/**
-	 * Lista de {@link Ponto} em 2D (duas dimensões)
-	 */
-
 	public static JPanel PanelPrincipal;
 	public static JLabel lblX;
 	public static JLabel lblY;
@@ -56,14 +52,11 @@ public class PanelPrincipal extends JFrame {
 		});
 	}
 
-
-
-	
 	/**
 	 * Create the frame.
 	 */
 	public PanelPrincipal() {
-		//setExtendedState(Frame.MAXIMIZED_BOTH);
+		// setExtendedState(Frame.MAXIMIZED_BOTH);
 
 		// **************PANEL PRINCIPAL**************************
 		PanelPrincipal = new JPanel();
@@ -72,7 +65,7 @@ public class PanelPrincipal extends JFrame {
 		setContentPane(PanelPrincipal);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(700, 800);
-		setTitle("Projeto Computa��o Gr�fica");
+		setTitle("Lab 1 de Computação Gráfica");
 		planoCartesiano = new PanelPlanoCartesiano();
 		// ************************LABELS***************************************************
 		JLabel lblCoordenadaX = new JLabel("Coordenada X:");
@@ -133,7 +126,7 @@ public class PanelPrincipal extends JFrame {
 			@SuppressWarnings("static-access")
 			@Override
 			public void mouseMoved(MouseEvent eventoDeMouse) {
-	
+
 				Posx = (int) getMousePosition().getX();
 				Posy = (int) getMousePosition().getY();
 				int dcx = eventoDeMouse.getX() - 300;
@@ -141,8 +134,7 @@ public class PanelPrincipal extends JFrame {
 
 				float ndcx = funcoesDeNormalizacao.calcularNDCX(dcx);
 				float ndcy = funcoesDeNormalizacao.calcularNDCY(dcy);
-				System.out.println("X:"+dcx);
-				System.out.println("Y:"+dcy);
+
 				lblCoordenadaNdcx.setText("Ndc X :  " + String.format("%.4f", ndcx));
 				lblCoordenadaNdcy.setText("Ndc Y :  " + String.format("%.4f", ndcy));
 
@@ -152,15 +144,13 @@ public class PanelPrincipal extends JFrame {
 				lblCoordenadaX.setText("X: " + (Integer.valueOf(Posx) - 350));
 				lblCoordenadaY.setText("Y: " + (Integer.valueOf(Posy) - 381) * (-1));
 
-				lblCoordenadaTela.setText("Tela: ("+(Posx-50)+","+(Posy-81)+")");
+				lblCoordenadaTela.setText("Tela: (" + (Posx - 50) + "," + (Posy - 81) + ")");
 			}
 		});
 		planoCartesiano.setLocation(50, 30);
 		PanelPrincipal.add(planoCartesiano);
 
 		PanelPrincipal.repaint();
-		flagPanelA = true;
-		flagPanelB = false;
 
 		// **********BARRA DE MENUS*********************
 
@@ -176,13 +166,10 @@ public class PanelPrincipal extends JFrame {
 		mnAjuda.add(mntmEquippe);
 		mntmEquippe.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				String team = "Equipe: \n"+"Gabriel Alves\n" + "Mateus Viana\n" + "Marcelo Pedrosa";
+				String team = "Equipe: \n" + "Gabriel Alves\n" + "Mateus Viana\n" + "Marcelo Pedrosa";
 				JOptionPane.showMessageDialog(null, team);
 			}
 		});
-
-		JMenu tela = new JMenu("Tela: 600x600");
-		barraDeMenu.add(tela);
 	}
 
 }

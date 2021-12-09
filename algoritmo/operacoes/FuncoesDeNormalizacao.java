@@ -1,4 +1,4 @@
-package algoritmo.operacoes3d;
+package algoritmo.operacoes;
 
 public class FuncoesDeNormalizacao {
 
@@ -26,30 +26,6 @@ public class FuncoesDeNormalizacao {
         dcy = ((ndv - 1) * ndcy);
         return Math.round(dcy);
     }
-	/*static public float calcularNDCX(float ndh, int dcx) {
-
-		double ndcx = (double) dcx / (ndh - 1);
-		return  ndcx;
-		
-	}
 	
-	static public double calcularNDCY(float ndv, int dcy){
-		
-		double ndcy = (double) dcy / (ndv - 1);
-		return ndcy;
-		
-	}
-	
-	static public int calcularDCX(int ndh, double ndcx){
-		dcx = ((ndh-1)* ndcx); 
-		return (int) Math.round(dcx);
-				
-	}
-	
-	static public int calcularDCY(int ndv, double ndcy){
-		dcy = ((ndv-1)* ndcy); 
-		return (int) Math.round(dcy);
-		
-	}*/
 
 }

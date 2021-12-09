@@ -1,13 +1,11 @@
-package algoritmo.operacoes3d;
+package algoritmo.operacoes;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionAdapter;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
-import java.util.List;
+
 
 import javax.swing.JPanel;
 
@@ -20,21 +18,9 @@ public class PanelPlanoCartesiano extends JPanel {
 	public final static int LARGURA = 600;
 	private static BufferedImage imagemCoordenadas;
 
-	public List<Ponto> lista = new ArrayList<Ponto>();
+
 	public PanelPlanoCartesiano() {
 		
-		addMouseMotionListener(new MouseMotionAdapter() {
-			@Override
-			public void mouseMoved(MouseEvent event) {
-				
-			}
-			@Override
-			public void mouseDragged(MouseEvent event) {
-				int x = event.getPoint().x;
-				int y = event.getPoint().y;
-				lista.add(new Ponto(x, y));
-			}
-		});
 		setBounds(400, 30, LARGURA, ALTURA);
 		imagemCoordenadas = new BufferedImage(LARGURA, ALTURA,
 				BufferedImage.TYPE_INT_ARGB);
@@ -69,11 +55,6 @@ public class PanelPlanoCartesiano extends JPanel {
 		});
 	}
 
-	public void desenharPixel(int x, int y, Color color) {
-		imagemCoordenadas.setRGB(x, y, color.getRGB());
-		
-		repaint();
-	}
 
 	private void addCoordenadas() {
 		int metade = (int) LARGURA / 2;
@@ -112,12 +93,7 @@ public class PanelPlanoCartesiano extends JPanel {
 		PanelPlanoCartesiano.imagemCoordenadas = imagemCoordenadas;
 	}
 
-	/**
-	 * @return the serialversionuid
-	 */
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
+
 
 	/**
 	 * @return the altura
