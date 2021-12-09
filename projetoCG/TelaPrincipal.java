@@ -1,7 +1,6 @@
 package projetoCG;
 
 import java.awt.EventQueue;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
@@ -12,9 +11,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
 import algoritmo.operacoes.*;
-
 import java.awt.event.MouseMotionAdapter;
 import java.awt.event.MouseEvent;
 

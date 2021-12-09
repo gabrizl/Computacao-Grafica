@@ -7,14 +7,14 @@ import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
 
-public class PanelDeDesenho2D extends JPanel {
+public class CoordenadasMouse extends JPanel {
 
 	BufferedImage imagemPlot;
 	
 	int valorx, valory;
 	static boolean limpaDesenho = false;
 
-	public PanelDeDesenho2D() {
+	public CoordenadasMouse() {
 
 		// MÉTODO QUE CAPTURA AS COORDENADAS DO MOUSE
 		addMouseMotionListener(new MouseMotionAdapter() {
