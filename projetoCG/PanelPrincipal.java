@@ -101,7 +101,7 @@ public class PanelPrincipal extends JFrame {
 		PanelPrincipal.add(lblCoordenadaDcy);
 
 		JLabel lblCoordenadaTela = new JLabel("Tela:");
-		lblCoordenadaTela.setBounds(303, 700, 169, 14);
+		lblCoordenadaTela.setBounds(303, 10, 169, 14);
 		PanelPrincipal.add(lblCoordenadaTela);
 
 		lblNdcx = new JLabel();

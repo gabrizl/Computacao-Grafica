@@ -6,21 +6,16 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 
-
 import javax.swing.JPanel;
-
-
 
 public class PanelPlanoCartesiano extends JPanel {
 
-	private static final long serialVersionUID = -5345146477227642140L;
 	public final static int ALTURA = 600;
 	public final static int LARGURA = 600;
 	private static BufferedImage imagemCoordenadas;
 
-
 	public PanelPlanoCartesiano() {
-		
+
 		setBounds(400, 30, LARGURA, ALTURA);
 		imagemCoordenadas = new BufferedImage(LARGURA, ALTURA,
 				BufferedImage.TYPE_INT_ARGB);
@@ -42,8 +37,6 @@ public class PanelPlanoCartesiano extends JPanel {
 		addCoordenadas();
 	}
 
-	
-
 	private void setPixel() {
 		addMouseListener(new MouseAdapter() {
 			@Override
@@ -54,7 +47,6 @@ public class PanelPlanoCartesiano extends JPanel {
 			}
 		});
 	}
-
 
 	private void addCoordenadas() {
 		int metade = (int) LARGURA / 2;
@@ -87,13 +79,11 @@ public class PanelPlanoCartesiano extends JPanel {
 
 	/**
 	 * @param imagemCoordenadas
-	 *            the imagemCoordenadas to set
+	 *                          the imagemCoordenadas to set
 	 */
 	public static void setImagemCoordenadas(BufferedImage imagemCoordenadas) {
 		PanelPlanoCartesiano.imagemCoordenadas = imagemCoordenadas;
 	}
-
-
 
 	/**
 	 * @return the altura
