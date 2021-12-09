@@ -24,8 +24,8 @@ public class PanelDeDesenho2D extends JPanel {
 
 				valorx = posicionaNoPlanoX(arg0.getX());
 				valory = posicionaNoPlanoY(arg0.getY());
-				PanelPrincipal.lblX.setText(Integer.toString(valorx));
-				PanelPrincipal.lblY.setText(Integer.toString(valory));
+				TelaPrincipal.lblX.setText(Integer.toString(valorx));
+				TelaPrincipal.lblY.setText(Integer.toString(valory));
 
 			}
 		});

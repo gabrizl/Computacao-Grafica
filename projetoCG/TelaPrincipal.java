@@ -18,10 +18,9 @@ import algoritmo.operacoes.*;
 import java.awt.event.MouseMotionAdapter;
 import java.awt.event.MouseEvent;
 
-public class PanelPrincipal extends JFrame {
+public class TelaPrincipal extends JFrame {
 
-	public static PanelPlanoCartesiano planoCartesiano = new PanelPlanoCartesiano();
-	public static PanelNormalizacao panelNormalizacao = new PanelNormalizacao();
+	public static PlanoCartesiano planoCartesiano = new PlanoCartesiano();
 	public static JPanel PanelPrincipal;
 	public static JLabel lblX;
 	public static JLabel lblY;
@@ -43,7 +42,7 @@ public class PanelPrincipal extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					PanelPrincipal frame = new PanelPrincipal();
+					TelaPrincipal frame = new TelaPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -55,7 +54,7 @@ public class PanelPrincipal extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public PanelPrincipal() {
+	public TelaPrincipal() {
 		// setExtendedState(Frame.MAXIMIZED_BOTH);
 
 		// **************PANEL PRINCIPAL**************************
@@ -66,7 +65,7 @@ public class PanelPrincipal extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(700, 800);
 		setTitle("Lab 1 de Computação Gráfica");
-		planoCartesiano = new PanelPlanoCartesiano();
+		planoCartesiano = new PlanoCartesiano();
 		// ************************LABELS***************************************************
 		JLabel lblCoordenadaX = new JLabel("Coordenada X:");
 		lblCoordenadaX.setBounds(64, 646, 176, 14);
