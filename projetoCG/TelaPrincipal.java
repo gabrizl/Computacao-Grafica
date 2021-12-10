@@ -125,22 +125,25 @@ public class TelaPrincipal extends JFrame {
 
 				Posx = (int) getMousePosition().getX();
 				Posy = (int) getMousePosition().getY();
-				int dcx = eventoDeMouse.getX() - 300;
-				int dcy = (eventoDeMouse.getY() - 300) * -1;
+				int auxNdcx = eventoDeMouse.getX() ;
+				int auxNdcy = (eventoDeMouse.getY());
 
-				float ndcx = funcoesDeNormalizacao.calcularNDCX(dcx);
-				float ndcy = funcoesDeNormalizacao.calcularNDCY(dcy);
+				float ndcx = funcoesDeNormalizacao.calcularNDCX(auxNdcx);
+				float ndcy = funcoesDeNormalizacao.calcularNDCY(auxNdcy)* (-1);
+
+				float auxDcx = funcoesDeNormalizacao.calcularNDCX(auxNdcx);
+				float auxDcy = funcoesDeNormalizacao.calcularNDCY(auxNdcy);
 
 				lblCoordenadaNdcx.setText("Ndc X :  " + String.format("%.4f", ndcx));
 				lblCoordenadaNdcy.setText("Ndc Y :  " + String.format("%.4f", ndcy));
 
-				lblCoordenadaDcx.setText("DcX:  " + Integer.toString(funcoesDeNormalizacao.calcularDCX(600, ndcx)));
-				lblCoordenadaDcy.setText("DcY:  " + Integer.toString(funcoesDeNormalizacao.calcularDCY(600, ndcy)));
+				lblCoordenadaDcx.setText("DcX:  " + Integer.toString(funcoesDeNormalizacao.calcularDCX(600, auxDcx)));
+				lblCoordenadaDcy.setText("DcY:  " + Integer.toString(funcoesDeNormalizacao.calcularDCY(600, auxDcy)));
 
-				lblCoordenadaX.setText("X: " + (Integer.valueOf(Posx) - 350));
-				lblCoordenadaY.setText("Y: " + (Integer.valueOf(Posy) - 381) * (-1));
+				lblCoordenadaX.setText("X: " + (Integer.valueOf(Posx) - 358));
+				lblCoordenadaY.setText("Y: " + (Integer.valueOf(Posy) - 384) * (-1));
 
-				lblCoordenadaTela.setText("Tela: (" + (Posx - 50) + "," + (Posy - 81) + ")");
+				lblCoordenadaTela.setText("Tela: (" + (Posx - 58) + "," + (Posy - 84) + ")");
 			}
 		});
 		planoCartesiano.setLocation(50, 30);
